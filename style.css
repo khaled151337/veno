@@ -1,0 +1,396 @@
+
+body{
+    background-color: rgb(0, 255, 47);
+}
+
+
+nav{
+    height: 65px;
+    width: 100%;
+    background-color: rgb(197, 217, 236);
+
+    margin: 30px;
+}
+
+nav .options_bar{
+    height: 100%;
+    width: 70%;  
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    gap: 7rem;
+}
+ .all{
+    /* background-color: rgb(49, 49, 66); */
+    color: black;
+} 
+.options_bar button{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 120px;
+    height: 90%;
+    border-radius: 32px; border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.options_bar button:hover{
+    scale: 1.2;
+}
+
+.product_box{
+    display: flex;
+    margin: auto; gap: 20px;
+    margin-top: 5vh;
+    transform: translateX(8%);
+    flex-wrap: wrap;
+
+    overflow: hidden;
+}
+
+.shoe{
+    border-radius: 10px;
+    transition: 0.3s; 
+   
+}
+.shoe:hover{
+    transform: scale(1.2);
+}
+
+
+.product_box .NIKE{
+    height: 300px; width: 300px; 
+    background-image: url(NIKE.png);
+    background-size: cover;
+}
+.product_box .PUMA{
+    height: 300px; width: 300px;    
+    background-image: url(PUMA.jpg);
+    background-size: cover;
+    
+}
+
+.product_box .GUCCI{
+    height: 300px; width: 300px; 
+    background-image: url(GUcci.jpg);
+    background-size: cover;
+}
+
+.product_box .BATA{
+    height: 300px; width: 300px; 
+    background-image: url(BATA.jpeg);
+    background-size: cover;
+}
+
+.active{
+    background-color: rgb(49, 49, 66);
+    color: white;
+}
+
+.rotate{
+
+    animation: puma .2s linear;
+}
+@keyframes puma{
+   0%{
+    margin-left: 100px;
+    transform: rotateZ(360deg);
+   }
+
+   100%{
+    margin-left: 0;
+    transform: rotateZ(0deg);
+   }
+}
+
+.rotateAll{
+
+    animation: Zuma .2s linear;
+}
+@keyframes Zuma{
+   0%{
+    margin-left: 100px;
+    transform: rotateZ(360deg);
+   }
+
+   100%{
+    margin-left: 0;
+    transform: rotateZ(0deg);
+   }
+}
+
+
+/* jQuery */
+/* section{
+    width: 100%;
+    height: 400px;
+
+   
+}
+.container{
+    margin: auto;
+    height: 100%;
+    width: 70%;
+    text-align: center;
+}
+button{
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer; border-radius: 6px;
+}
+.box{
+    height: 80%;
+    width: 100%;
+    background-color: green;
+
+    border: 5px solid green;
+}
+ */
+
+/* ACCORDUM */
+
+/* .question{
+    background-color: #f9f9f9;
+    height: 40px;
+    line-height: 40px;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; 
+}
+
+.answer{
+    background-color: #190a46;
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    display: none;   margin-bottom: 10px;
+}
+.question_two{
+    background-color: #f9f9f9;
+    height: 40px;
+    line-height: 40px;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; margin-top: 5px;
+} 
+
+.answer_two{
+    background-color: #190a46;
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    display: none;  
+    
+}
+.question_three{
+    background-color: #f9f9f9;
+    height: 40px;
+    line-height: 40px;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;  margin-top: 5px;
+}
+
+.answer_three{
+    background-color: #190a46;
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    display: none;     
+}
+
+
+
+i{
+    margin-left: 200px;
+}
+  */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    width: 100%;
+    height: 60vh;
+}
+
+.slider .container{
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+
+
+    position: relative;
+
+}
+
+.slider .container .slick_parent{
+
+    position: absolute;
+    width: 950px;
+    height: 300px;
+
+    overflow: hidden;
+    margin: 70px 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick_parent .slick_child{
+    height: 50%;
+    width: 30%;
+
+   margin: 10px;
+
+    
+
+}
+
+.slick_child img{
+    width: 250px;
+    margin: 0 5px;
+    z-index: -1;
+
+    transition: .4s;
+}
+
+.right{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(255, 191, 0);
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+.left{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(255, 191, 0);
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slick-center{
+    transform: scale(1.2);
+    
+}
+
+#venobox{
+    width: 100%;
+    height: 30vh;
+}
+#venobox .container{
+    margin: auto;
+    height: 100%;
+    width: 1170px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.my-video-links{
+    width: 150px;
+    height: 30px;
+
+    background-color: rgb(192, 18, 12);
+    color: white;
+    text-decoration: none; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    font-size: 20px;
+}
+
+#first_card{
+    padding: 15px 30px;
+    background-color: brown;
+
+    margin: 45px 10px;
+
+    
+   
+    color: white;
+
+    font-size: 30px;
+    text-align: center;
+    line-height: 210px;
+
+    border-radius: 10px;
+
+}
+
+
+.first{
+    animation: first 1s linear;
+}
+
+@keyframes first {
+    0%{
+        margin-left: -400px;
+        transform: rotateZ(720deg);
+        opacity: 0;
+
+        width: 0; height: 0;
+        
+        font-size: 0;
+        text-align: center;
+      
+    }
+    50%{
+        margin-left: 400px;
+        text-align: center;
+    }
+    100%{
+        margin-left: 0px;
+        text-align: center;
+        scale: 1.5;
+        opacity: 1;
+    }
+}
+
+#second_card{
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+
+    margin: 45px 10px;
+    animation: secont .5s linear;
+}
+
+#third_card{
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+
+    margin: 45px 10px;
+    animation: third .5s linear;
+}
+
